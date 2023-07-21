@@ -27,6 +27,6 @@ let final = nums.concat(result)
 return final
 }
 
-const nums = [0]
+const nums = [0,1,0,3,12]
 const show = pushZero(nums)
 console.log(show)
