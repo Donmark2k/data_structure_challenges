@@ -15,6 +15,7 @@ Example 3:
 Input: head = [7,7,7,7], val = 7
 Output: []
 */
+
 class ListNode {
     constructor(val) {
       this.val = val;
@@ -22,7 +23,8 @@ class ListNode {
     }
   }
   
-  var removeElements = function (head, val) {
+
+var removeElements = function(head, val) {
     // Base case: If head is null, return null
     if (head === null) {
       return null;
@@ -40,22 +42,8 @@ class ListNode {
     return head; // Keep the current node in the modified list
   };
   
-  // Helper function to convert array to linked list
-  const arrayToLinkedList = (arr) => {
-    if (arr.length === 0) return null;
-    const head = new ListNode(arr[0]);
-    let current = head;
-    for (let i = 1; i < arr.length; i++) {
-      current.next = new ListNode(arr[i]);
-      current = current.next;
-    }
-    return head;
-  };
-  
-  const arr = [1, 2, 6, 3, 4, 5, 6];
-  const val = 6;
-  
-  const head = arrayToLinkedList(arr);
-  const remove = removeElements(head, val);
-  console.log(remove);
-  
+const  head = [1,2,6,3,4,5,6]
+const  val = 6
+
+const remove = removeElements(head, val)
+  console.log(remove)
