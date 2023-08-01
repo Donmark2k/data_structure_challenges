@@ -34,5 +34,4 @@ var isPowerOfThree = function(n) {
     return n === 1;
 };
 
-
 console.log(isPowerOfThree(25))
