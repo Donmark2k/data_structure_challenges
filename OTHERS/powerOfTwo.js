@@ -29,3 +29,4 @@ const isPowerOfTwo = function(n) {
 }
 
 console.log(isPowerOfTwo(8))
+console.log(isPowerOfTwo(18))
